@@ -90,8 +90,8 @@ document.ready(
 
 console.log(
       '\n' 
-    + ' %c ꦿ᭄꯭꯭随꯭性꯭এ.' 
-    + ' %c https://hi.sb ' 
+    + ' %c ꦿ᭄꯭꯭小k网络科技微信搜索公众号:酿俗' 
+    + ' %c 本源码永久更新开源地址https://github.com/gylwj/gylwj.github.io ' 
     + '\n', 
 
     'color: #fadfa3; background: #030307; padding:5px 0; line-height:1.5;', 
