@@ -1,4 +1,4 @@
-# 预览地址https://imlwj.cn
+# 预览地址https://xkboi.gitee.io/zy/
 # 官方微信公众号:酿俗
 > 下面是pc和手机的演示图
 
