@@ -1,0 +1,255 @@
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport"
+			content="initial-scale=0.9, maximum-scale=1.0, minimum-scale=0.9, user-scalable=0, width=device-width">
+
+
+		<meta itemprop="name" content="酿俗boi">
+
+
+		<meta itemprop="image" content="https://q1.qlogo.cn/headimg_dl?dst_uin=3194703513&spec=100" />
+		<meta name="description" itemprop="description" content="我只是呆呆地等一场雪，心生欢喜" />
+
+
+
+		<meta name="keywords" content="酿俗boi,平面设计师">
+
+		<meta name="description" content="" 所谓的奇迹，要真的发生才有价值。"">
+		<title>
+			酿俗boi
+		</title>
+
+		<meta property="og:type" content="website">
+
+		<meta property="og:url" content="#">
+
+		<meta property="og:image" content="https://q1.qlogo.cn/headimg_dl?dst_uin=3194703513&spec=100">
+
+		<meta property="og:title" content="酿俗boi">
+
+		<meta property="og:description" content="酿俗boi">
+
+		<link rel="canonical" href="#">
+
+		<link rel="shortcut icon" href="https://q1.qlogo.cn/headimg_dl?dst_uin=3194703513&spec=100">
+
+		<link rel="bookmark" href="https://q1.qlogo.cn/headimg_dl?dst_uin=3194703513&spec=100">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="https://q1.qlogo.cn/headimg_dl?dst_uin=3194703513&spec=100">
+
+		<link rel="stylesheet" type="text/css" href="css/dark.css" id="css">
+
+		<link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
+
+		<script src="js/script.js" type="text/javascript"></script>
+
+		<script src="js/dark.js" type="text/javascript"></script>
+
+		<!--弹出赞赏的jquery3.6.0.1头部官方库：https://code.jquery.com/jquery-3.6.0.min.js-->
+		<script src="js/jquery-3.6.0.min.js"></script>
+
+		<style>
+			@font-face {
+				font-family: "阿里妈妈数黑体 Bold";
+				font-weight: 700;
+				src: url("fonts/mm02.woff2") format("woff2"),
+					url("fonts/mm01.woff") format("woff");
+				font-display: swap;
+			}
+
+			body {
+				font-family: "阿里妈妈数黑体 Bold", Arial, sans-serif;
+			}
+		</style>
+
+		<!--赞赏配置-->
+		<script>
+			jQuery(document).ready(function() {
+				var QRBox = $('#QRBox');
+				var MainBox = $('#MainBox');
+				//var AliPayQR =
+				//"https://cdn.jsdelivr.net/gh/zhx6/imgtuchuang/62777cbdd3b04fc8f4a11e055bd82866.png"; //支付宝二维码
+				var WeChanQR = "images/wxewm.svg"; //微信二维码
+				var QQQR = "images/qqewm.svg"; //QQ二维码
+
+
+
+				function showQR(QR) {
+					if (QR) {
+						MainBox.css('background-image', 'url(' + QR + ')');
+					}
+					$('#DonateText,#donateBox').addClass('blur');
+					QRBox.fadeIn(300, function(argument) {
+						MainBox.addClass('showQR');
+					});
+				}
+
+				$('#donateBox>li').click(function(event) {
+					var thisID = $(this).attr('id');
+					if (thisID === 'AliPay') {
+						showQR(AliPayQR);
+					} else if (thisID === 'WeChat') {
+						showQR(WeChanQR);
+					} else if (thisID === 'QQ') {
+						showQR(QQQR);
+
+					}
+				});
+
+				MainBox.click(function(event) {
+					MainBox.removeClass('showQR').addClass('hideQR');
+					setTimeout(function(a) {
+						QRBox.fadeOut(300, function(argument) {
+							MainBox.removeClass('hideQR');
+						});
+						$('#DonateText,#donateBox').removeClass('blur');
+					}, 600);
+
+				});
+			});
+		</script>
+
+		<style>
+			.zuobiao i {
+				line-height: 1.8;
+				margin-right: 6px;
+				vertical-align: middle;
+				background-image: url(images/zuobiao.svg);
+				background-size: 100%;
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				margin-top: -2px;
+			}
+		</style>
+
+		<style>
+			.user-warp img {
+				width: 70px;
+				border-radius: 30%;
+			}
+
+			/*切换模式后的头像呼吸灯*/
+			.dark-theme .user-warp img {
+				width: 70px;
+				border-radius: 100%;
+				animation: light 5s ease-in-out infinite;
+				transition: 0.5s;
+			}
+
+
+
+			@keyframes light {
+				0% {
+					box-shadow: 0 0 4px #f00;
+				}
+
+				25% {
+					box-shadow: 0 0 5px #0f0;
+				}
+
+				50% {
+					box-shadow: 0 0 4px #00f;
+				}
+
+				75% {
+					box-shadow: 0 0 5px #0f0;
+				}
+
+				100% {
+					box-shadow: 0 0 4px #f00;
+				}
+			}
+		</style>
+
+	</head>
+
+	<!--页面内容-->
+
+	<body>
+
+		<div class="wrapper">
+			<header>
+				<nav class="navbar" id="mobile-toggle-theme">
+					<div class="container"> </div>
+				</nav>
+			</header>
+
+			<div class="main">
+				<div class="container">
+					<div class="intro" style=" line-height: 50px">
+						<div class="user-warp img"><a href="#" target="_blank">
+								<img src="https://q1.qlogo.cn/headimg_dl?dst_uin=3194703513&spec=100" alt="酿俗boi"></a>
+						</div>
+
+						<div class="nickname">酿俗boi</div>
+						<div class="description">
+							<p>“当有一念善，善念即出，奇迹始开。”</p>
+						</div>
+
+
+						<div class="zuobiao">
+							<i class="ico_map"></i>中国 · 江苏
+							<span style="margin-left: 30px">
+								<input id="switch_default" type="checkbox" class="switch_default">
+								<label for="switch_default" class="toggleBtn"></label></span>
+						</div>
+
+						<div class="menu navbar-right links">
+
+							<!-- 获取页面列表 -->
+
+							<a class="menu-item" href="https://rjku.gitee.io" target="_blank">
+								资源</a> ·
+
+							<a class="menu-item" href="https://xkboi.cnblogs.com" target="_blank">
+								博客</a> ·
+
+							<a class="menu-item"
+								href="https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=Vxw8K&businessType=9&from=181074&biz=ka&mainSourceId=share&subSourceId=others&jumpsource=shorturl#/pc"
+								target="_blank">
+								交流</a> ·
+
+							<a href="mailto:3194703513@qq.com" target="_blank">
+								邮箱</a>
+
+						</div> <br>
+						<div style=" line-height: 20px;font-size: 9pt;">
+							<p>"议论之际，宜相尊重，申以友敬，言语有德。"</p>
+							<p style="margin-left: 8rem;font-size: 8pt;"><small>—— 酿俗boi</small></p>
+						</div> <br>
+						<!--赞赏码位置配置-->
+						<center>
+							<ul id="donateBox" class="list pos-f tr3">
+								<!--支付宝赞赏码去除<li id="AliPay">AliPay</li>-->
+								<li id="WeChat">WeChat</li>
+								<!--id为#为间隔-->
+								<li id="#">#</li>
+								<li id="QQ">QQ</li>
+							</ul>
+
+							<div id="QRBox" class="pos-f left-100">
+								<div id="MainBox"></div>
+							</div>
+
+						</center> <br>
+
+						<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2022035280号-1</a>
+						<br>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32080402000231"><img
+								src="https://cdn.imlwj.cn/imlwj/images/6.png">苏公网安备32080402000231号</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
