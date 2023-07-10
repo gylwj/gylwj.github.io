@@ -136,7 +136,7 @@ body.dark-theme {
 }
 
 body.dark-theme {
-	background-image: url(../images/login_screen_bg_201230.png);
+	background-image: url(../images/bt2.png);
 	/*主要文字切换模式后的字体颜色*/
 	color: #ffffff;
 	transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
